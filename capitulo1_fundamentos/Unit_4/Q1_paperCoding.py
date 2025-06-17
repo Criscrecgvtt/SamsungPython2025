@@ -8,4 +8,4 @@ height = 60
 area = height*width
 
 #Imprimo resultado
-print("Thea area is",area)
+print("Thea area of the rectangle is",area)
