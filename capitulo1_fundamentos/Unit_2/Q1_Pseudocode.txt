@@ -1,3 +1,16 @@
+#Mi planteamiento
 1.Go west
 2.Straight until 4 buildings
 3 If you see post-office turn right
+4. Go staright until you see italian restaurant
+5 Count three buildings and that is your hotel
+
+#Solución profesor conjunta
+print ("AVANZA")
+if get EDIFICIO = "POST OFFICE"
+    then print("GIRA DERECHA")
+while get EDIFICIO is not "ITALIAN RESTAURANT"
+    print("AVANZA")
+for 3
+    print("AVANZA")
+print ("HAS LLEGADO)
