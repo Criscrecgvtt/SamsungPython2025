@@ -15,3 +15,6 @@ for i in lista:
 #Funcion sum
 numbers=[10,20,30,40,50]
 print("La suma de la lista es",sum(numbers))
+#Recorre un string
+for ch in "Hello":
+    print(ch,end=" ")
