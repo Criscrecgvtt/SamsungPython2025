@@ -18,3 +18,5 @@ print("La suma de la lista es",sum(numbers))
 #Recorre un string
 for ch in "Hello":
     print(ch,end=" ")
+#format, puedo decidir con cierta precision apra imprimir numeros en el mismo formato
+#para tabals y columnas
