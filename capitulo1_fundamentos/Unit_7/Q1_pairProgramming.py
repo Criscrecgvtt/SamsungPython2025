@@ -6,6 +6,8 @@ if not(op_num in op_types):
 else:
     a,b= input("Enter two numbers for the operation: ").split()
     a,b = int(a),int(b)
+    #a = int(input())
+    #b = int(input())
     print(a)
     print(b)
     if op_num == 1:
