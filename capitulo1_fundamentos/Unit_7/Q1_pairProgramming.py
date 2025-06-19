@@ -17,4 +17,7 @@ else:
     elif op_num == 3:
         print(a,"*",b,"=",a*b)
     else:
-        print(a,"/",b,"=",a/b)
+        if (b ==0):
+            print("The division of",a,"/","0","is not possible")
+        else:
+            print(a,"/",b,"=",a/b)
