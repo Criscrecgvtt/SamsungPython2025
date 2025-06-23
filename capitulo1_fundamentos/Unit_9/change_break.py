@@ -8,3 +8,5 @@ while i<len(cadena) and not encontrada:
     else:
         print(cadena[i])
     i+=1
+
+print("FIN")
