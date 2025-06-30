@@ -11,3 +11,7 @@ print(lista)
 print(lista2)
 
 #Todos los elementoa menos los n últimos 
+
+#Elementos de caracteres , ordenadcion
+
+print(ord("C")) #Te devuelve el código de ascii
