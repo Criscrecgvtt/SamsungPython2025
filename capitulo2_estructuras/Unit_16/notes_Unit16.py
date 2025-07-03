@@ -102,3 +102,6 @@ B < A   # True subset: B is subset of A and B ≠ A
 #6.Iteration Statements and Sets
 for i in A:
     print(i,end=" ")
+
+#No estan ordenados, pero los podemos ordenar con sorted
+# Sorted devuelve una lista
