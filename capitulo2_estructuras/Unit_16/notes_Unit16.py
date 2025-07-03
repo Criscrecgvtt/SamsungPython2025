@@ -98,3 +98,7 @@ B = {1, 2, 3}
 
 B < A   # True subset: B is subset of A and B ≠ A
 # Output: True
+
+#6.Iteration Statements and Sets
+for i in A:
+    print(i,end=" ")
