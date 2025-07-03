@@ -9,8 +9,8 @@ for tupla in student_tup:
 
 sid = input("Enter student ID number: ")
 student_car = student_dic.get(sid, "none")
-if (student_car != "none"):
-    print("Name",student_car[0])
-    print("Phone Number",student_car[1])
+if (student_car != "none"): #if student_car in student_dict y haces el get despues
+    print("Name:",student_car[0])
+    print("Phone Number:",student_car[1])
 else:
     print("The student does not exist")
