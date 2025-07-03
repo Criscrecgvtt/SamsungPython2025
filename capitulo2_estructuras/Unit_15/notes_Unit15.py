@@ -1,4 +1,13 @@
 from collections import defaultdict
+import copy
+
+lista_original = [[1, 2], [3, 4]]
+copia_shallow = copy.copy(lista_original)
+
+copia_shallow[0][0] = 999
+
+print(lista_original)  # [[999, 2], [3, 4]]
+
 #1.Converting List and tupple into dictionary
     
 #1.1 From Lists
@@ -99,3 +108,45 @@ print(x == y )#Es verdadero pq son iguales, pero no seon el mismo, pero si cambi
 
 
 """
+#El cambio en la copia afecta a la original, porque las listas internas son compartidas.
+lista_original = [[1, 2], [3, 4]]
+copia_shallow = copy.copy(lista_original)
+
+copia_shallow[0][0] = 999
+
+print(lista_original)  # [[999, 2], [3, 4]]
+
+#Aquí el cambio no afecta a la original, porque se copió todo, incluso lo que está dentro
+
+lista_original = [[1, 2], [3, 4]]
+copia_profunda = copy.deepcopy(lista_original)
+
+copia_profunda[0][0] = 999
+
+print(lista_original)  # [[1, 2], [3, 4]]
+
+#Se ha modificado el diccionario original, porque copy.copy() solo copia la capa exterior, pero las listas y subdiccionarios siguen siendo las mismas referencias.
+original = {
+    'a': [1, 2, 3],
+    'b': {'x': 10}
+}
+
+shallow = copy.copy(original)
+
+shallow['a'][0] = 999
+shallow['b']['x'] = 777
+
+print(original)#{'a': [999, 2, 3], 'b': {'x': 777}}
+
+# El original no cambia porque deepcopy() copia todo, recursivamente.
+original = {
+    'a': [1, 2, 3],
+    'b': {'x': 10}
+}
+
+deep = copy.deepcopy(original)
+
+deep['a'][0] = 999
+deep['b']['x'] = 777
+
+print(original) #{'a': [1, 2, 3], 'b': {'x': 10}}
