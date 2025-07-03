@@ -11,3 +11,9 @@ for student in student_tup:
     res_dict[student_id] = [name, phone]
 
 print(res_dict)
+
+""" for tupla in student_tup:
+        student_dic[tupla[0]] = list(tupla[1:])
+"""
+
+"""res_dict = {s[0]: [s[1].strip(), s[2]] for s in student_tup}"""
