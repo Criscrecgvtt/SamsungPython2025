@@ -10,4 +10,5 @@ def euler (n):
         return 1
     return n/factorial(n) +euler(n-1)
 
-print(euler(20))
+print(euler(20)) #sin truncar
+print(round(euler(20),5)) #con truncar
