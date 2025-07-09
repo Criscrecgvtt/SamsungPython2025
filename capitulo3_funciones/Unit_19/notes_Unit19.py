@@ -20,3 +20,11 @@ ages = [34, 39, 20, 18, 13, 54]
 print('adults list :')
 for a in filter(lambda x: x >= 19, ages):  # filter ages using filter() function
     print(a, end=' ')
+
+
+
+# MAP Function
+a = [1, 2, 3, 4, 5, 6, 7]
+square_a = list(map(lambda x: x**2, a))
+print(square_a)
+
