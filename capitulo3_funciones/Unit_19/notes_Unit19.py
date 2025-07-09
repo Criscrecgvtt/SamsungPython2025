@@ -28,3 +28,11 @@ a = [1, 2, 3, 4, 5, 6, 7]
 square_a = list(map(lambda x: x**2, a))
 print(square_a)
 
+# REDUCE function
+
+from functools import reduce
+
+a = [1, 2, 3, 4]
+n = reduce(lambda x, y: x + y, a)
+print(n)
+
