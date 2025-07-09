@@ -6,9 +6,11 @@ def factorial(n):
     
 
 def euler (n):
-    if n==1:
+    if n==0:
         return 1
-    return n/factorial(n) +euler(n-1)
+    return 1/factorial(n) +euler(n-1)
 
+print(euler(0))
+print (euler(1))
 print(euler(20)) #sin truncar
 print(round(euler(20),5)) #con truncar
