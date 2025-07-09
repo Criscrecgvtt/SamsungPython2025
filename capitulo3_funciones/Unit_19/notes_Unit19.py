@@ -15,3 +15,8 @@ ages = [34, 39, 20, 18, 13, 54]
 print('adults_list :')
 for a in filter(adult_func, ages):  # filter ages by using filter() function
     print(a, end=' ')
+
+ages = [34, 39, 20, 18, 13, 54]
+print('adults list :')
+for a in filter(lambda x: x >= 19, ages):  # filter ages using filter() function
+    print(a, end=' ')
