@@ -102,3 +102,11 @@ print("Value of c1's name variable:", c1.__dict__['_Circle__name'])  # Output: C
 
 # Igual per a __radius, que es guarda com '_Circle__radius'
 print("Value of c1's radius variable:", c1.__dict__['_Circle__radius'])  # Output: 4
+
+class A:        # parent class A
+    #statements
+    pass
+
+class B(A):     # child class B with A as the parent
+   # statements
+   pass
